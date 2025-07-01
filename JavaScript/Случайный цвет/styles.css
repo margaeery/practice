@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 300px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group label {
+    width: 70px;
+    text-align: right;
+    padding-right: 8px;
+    position: relative;
+    font-size: 13px;
+}
+
+.input-group label::after {
+    content: ":";
+    position: absolute;
+    right: 5px;
+}
+
+input {
+    width: 200px;
+    padding: 4px 10px;
+    border: 1px solid #000;
+    border-radius: 0;
+    font-size: 14px;
+    height: 24px;
+    box-sizing: border-box;
+    color: #999;
+    margin-left: 5px;
+}
+
+input:focus {
+    color: #000;
+    outline: none;
+}
+
+
+button {
+    padding: 4px;
+    background-color: #f0f0f0;
+    border: 1px solid #000;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 200px;
+    font-size: 15px;
+    height: 28px;
+    margin-left: 83px;
+    box-sizing: border-box;
+    margin-top: 2px;
+    font-weight: normal;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0 8px 0;
+}
+
+.square {
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #000;
+    margin-top: 6px;
+}
