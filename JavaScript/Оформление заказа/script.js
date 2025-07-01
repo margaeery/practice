@@ -11,20 +11,21 @@ function initMap() {
     
     map.events.add('click', function (e) {
         if (!map.balloon.isOpen()) {
-            var coords = e.get('coords');
+            const coords = e.get('coords');
+            selectedCoords = coords;
+            document.getElementById('coordinates').value = coords.join(',');
+            
             map.balloon.open(coords, {
-                contentBody:
-                    '<p>Координаты : ' + [
+                contentBody: '<p>Координаты: ' + [
                     coords[0].toPrecision(6),
                     coords[1].toPrecision(6)
-                    ].join(', ') 
+                ].join(', ') + '</p>'
             });
         }
         else {
             map.balloon.close();
         }
     });
-
 }
 
 
